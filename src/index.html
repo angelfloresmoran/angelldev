@@ -20,9 +20,15 @@
         <form action="" class="bg-white w-80 mx-auto mt-8 rounded-lg p-6">
 
             <input type="text" placeholder="Nombre" class="border border-gray-300 w-full px-3 py-2 mb-4 rounded-r-md disabled:bg-amber-200" disabled>
-            <input type="email" placeholder="Correo" class="border border-gray-300 w-full px-3 py-2 mb-4 rounded-r-md focus:outline-none focus:ring-1 focus:ring-purple-600">
-            <input type="password" placeholder="Contraseña" class="border border-gray-300 w-full px-3 py-2 mb-4 rounded-r-md">
-            <input type="submit" value="Ingresar" class="bg-blue-300 w-full py-2 text-white rounded-md cursor-pointer">
+
+            <input type="email" placeholder="Correo" class="border border-gray-300 w-full px-3 py-2 rounded-r-md 
+            focus:outline-none focus:ring-1 focus:ring-purple-600 peer
+            invalid:focus:ring-amber-200">
+            <p class="text-red-400 hidden peer-invalid:block">El correo en invalido</p>
+
+            <input type="password" placeholder="Contraseña" class="border border-gray-300 w-full px-3 py-2 mb-4 mt-4 rounded-r-md">
+
+            <input type="submit" value="Ingresar" class="bg-blue-300 w-full py-2 text-white rounded-md cursor-pointer hover:bg-blue-100">
 
         </form>
     </div>
